@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: online-conference-registration-service
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/online-conference-registration-db"
+    username: "postgres"
+    password: "123"
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  flyway:
+    schemas:
+      - public
+    baseline-on-migrate: true
